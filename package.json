@@ -1,6 +1,6 @@
 {
   "name": "react-custom-ampersand",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React component that replaces plain ampersand characters with styled span tags which contain a custom Google Font ampersand character.",
   "repository": {
     "type": "git",
