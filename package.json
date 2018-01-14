@@ -1,0 +1,33 @@
+{
+  "name": "react-custom-ampersand",
+  "version": "1.0.0",
+  "description": "React component that replaces plain ampersand characters with styled span tags which contain a custom Google Font ampersand character.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joeldbirch/react-custom-ampersand.git"
+  },
+  "main": "ReactCustomAmpersand.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "html",
+    "span"
+  ],
+  "author": {
+    "name": "Joel Birch",
+    "email": "joeldbirch@gmail.com"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=15.0.0"
+  },
+  "dependencies": {
+    "array-intersperse": "^1.0.0",
+    "react-helmet": "^5.2.0",
+    "react": "^15.x",
+    "react-dom": "^15.x"
+  }
+}
