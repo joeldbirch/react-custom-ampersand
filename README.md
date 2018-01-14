@@ -52,7 +52,7 @@ outputs:
 <h1> This is a heading <span style="color:rebeccapurple;line-height:.9;font-family: Display Playfair, serif;">&</span> it contains a fancy ampersand.</h1>
 ```
 
-However, instead of importing the component directly you can import a helper function which will find and replace plain "&" characters with an instance of the ReactCustomAmpersand component. For example:
+However, rather than importing the component directly, you may prefer to import a helper function which will find plain "&" characters in a given string of text and automatically replace each of them with an instance of the ReactCustomAmpersand component. For example:
 
 ```javascript
 import React from 'react';
