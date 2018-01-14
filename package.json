@@ -6,7 +6,7 @@
     "type": "git",
     "url": "git+https://github.com/joeldbirch/react-custom-ampersand.git"
   },
-  "main": "ReactCustomAmpersand.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
