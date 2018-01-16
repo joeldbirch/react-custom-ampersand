@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {Helmet} from 'react-helmet'
-import 'array-intersperse'
 
 const ReactCustomAmpersand = ({color, lineHeight, fontName}) => {
   return (
@@ -39,5 +38,10 @@ export default ReactCustomAmpersand
 // plain ampersands with this component
 
 export const applyCustomAmpersands = function(content, props) {
-  return content.split('&').intersperse(React.createElement(ReactCustomAmpersand, props))
+  const bits = content.split('&')
+  return bits.slice(1).reduce(function(xs, x, i) {
+    const ampersand = React.createElement(ReactCustomAmpersand, Object.assign({key: `unnecessaryKey${i}`}, props) )
+    return  xs.concat([ampersand, x])
+  }, [bits[0]])
 }
+

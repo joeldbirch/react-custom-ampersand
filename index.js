@@ -9,7 +9,9 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-require('array-intersperse');
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _reactHelmet = require('react-helmet');
 
@@ -37,9 +39,9 @@ var ReactCustomAmpersand = function ReactCustomAmpersand(_ref) {
 };
 
 ReactCustomAmpersand.PropTypes = {
-  color: _react2.default.PropTypes.String,
-  fontName: _react2.default.PropTypes.String,
-  lineHeight: [_react2.default.PropTypes.Number, _react2.default.PropTypes.String]
+  color: _propTypes2.default.String,
+  fontName: _propTypes2.default.String,
+  lineHeight: [_propTypes2.default.Number, _propTypes2.default.String]
 };
 
 ReactCustomAmpersand.defaultProps = {
@@ -54,5 +56,9 @@ exports.default = ReactCustomAmpersand;
 // plain ampersands with this component
 
 var applyCustomAmpersands = exports.applyCustomAmpersands = function applyCustomAmpersands(content, props) {
-  return content.split('&').intersperse(_react2.default.createElement(ReactCustomAmpersand, props));
+  var bits = content.split('&');
+  return bits.slice(1).reduce(function (xs, x, i) {
+    var ampersand = _react2.default.createElement(ReactCustomAmpersand, Object.assign({ key: 'unnecessaryKey' + i }, props));
+    return xs.concat([ampersand, x]);
+  }, [bits[0]]);
 };
