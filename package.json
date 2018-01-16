@@ -22,13 +22,12 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "react": ">=15.0.0"
+    "react": "^15.x",
+    "react-dom": "^15.x"
   },
   "dependencies": {
     "array-intersperse": "^1.0.0",
     "prop-types": "^15.6.0",
-    "react": "^15.x",
-    "react-dom": "^15.x",
     "react-helmet": "^5.2.0"
   }
 }
