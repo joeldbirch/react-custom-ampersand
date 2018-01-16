@@ -1,6 +1,7 @@
 import React from 'react'
-import 'array-intersperse'
+import PropTypes from 'prop-types'
 import {Helmet} from 'react-helmet'
+import 'array-intersperse'
 
 const ReactCustomAmpersand = ({color, lineHeight, fontName}) => {
   return (
@@ -18,11 +19,11 @@ const ReactCustomAmpersand = ({color, lineHeight, fontName}) => {
 }
 
 ReactCustomAmpersand.PropTypes = {
-  color: React.PropTypes.String,
-  fontName: React.PropTypes.String,
+  color: PropTypes.String,
+  fontName: PropTypes.String,
   lineHeight: [
-    React.PropTypes.Number,
-    React.PropTypes.String,
+    PropTypes.Number,
+    PropTypes.String,
   ],
 }
 
