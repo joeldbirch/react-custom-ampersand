@@ -38,7 +38,7 @@ var ReactCustomAmpersand = function ReactCustomAmpersand(_ref) {
   );
 };
 
-ReactCustomAmpersand.PropTypes = {
+ReactCustomAmpersand.propTypes = {
   color: _propTypes2.default.String,
   fontName: _propTypes2.default.String,
   lineHeight: [_propTypes2.default.Number, _propTypes2.default.String]

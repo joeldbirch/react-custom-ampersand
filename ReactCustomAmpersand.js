@@ -17,7 +17,7 @@ const ReactCustomAmpersand = ({color, lineHeight, fontName}) => {
   )
 }
 
-ReactCustomAmpersand.PropTypes = {
+ReactCustomAmpersand.propTypes = {
   color: PropTypes.String,
   fontName: PropTypes.String,
   lineHeight: [
